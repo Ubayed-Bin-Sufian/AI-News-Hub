@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const App = () => {
-  const [summaries, setSummaries] = useState([]);
+  const [combinedSummary, setCombinedSummary] = useState("");
   const [error, setError] = useState("");
 
   // URLs for AI news
@@ -12,48 +12,36 @@ const App = () => {
     'https://www.artificialintelligence-news.com/' // AI News
   ];
 
-  // Function to fetch the summaries when the component loads
+  // Function to fetch the combined news summary when the component loads
   useEffect(() => {
-    const fetchNewsSummaries = async () => {
+    const fetchCombinedNewsSummary = async () => {
       try {
-        // Use Promise.all to fetch summaries from all URLs in parallel
-        const responses = await Promise.all(
-          newsUrls.map(url =>
-            axios.post('http://localhost:5000/AI_news', { url })
-          )
-        );
-
-        // Extract and set the summaries from the API responses
-        const fetchedSummaries = responses.map((response, index) => ({
-          url: newsUrls[index],
-          summary: response.data['News Summary: ']
-        }));
-        setSummaries(fetchedSummaries); // Set the fetched summaries
+        // Send a POST request to the backend with the list of news URLs
+        const response = await axios.post('http://localhost:5000/AI_news', {
+          urls: newsUrls // Send all URLs as an array
+        });
+        
+        setCombinedSummary(response.data['News Summary: ']); // Assuming the backend returns a key 'News Summary: '
       } catch (err) {
-        setError("An error occurred while fetching the summaries.");
+        setError("An error occurred while fetching the combined summary.");
         console.error(err);
       }
     };
 
-    fetchNewsSummaries(); // Fetch summaries when component mounts
+    fetchCombinedNewsSummary(); // Call the fetch function when the component mounts
   }, []); // Empty dependency array to run effect only once when component mounts
 
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>AI News Summaries</h1>
+      <h1>AI Combined News Summary</h1>
       
-      {summaries.length > 0 ? (
-        summaries.map((item, index) => (
-          <div
-            key={index}
-            style={{ marginTop: '30px', padding: '20px', border: '1px solid #ccc', width: '80%', margin: 'auto' }}
-          >
-            <h2>Latest AI News from {new URL(item.url).hostname}</h2>
-            <p>{item.summary}</p>
-          </div>
-        ))
+      {combinedSummary ? (
+        <div style={{ marginTop: '30px', padding: '20px', border: '1px solid #ccc', width: '80%', margin: 'auto' }}>
+          <h2>Latest AI News</h2>
+          <p>{combinedSummary}</p>
+        </div>
       ) : (
-        <p>Loading summaries...</p>
+        <p>Loading combined summary...</p>
       )}
 
       {error && (
