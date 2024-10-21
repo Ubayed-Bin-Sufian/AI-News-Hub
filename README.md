@@ -1,3 +1,27 @@
+<h1 align="center">
+  AI NEWS HUB
+</h1>
+
+<p align="center">  
+   <a href="https://reactjs.org/" target="_blank">
+     <img src="https://img.shields.io/badge/Powered%20by-React-%2361dafb?logo=react" />
+   </a>  
+   <a href="https://github.com/Ubayed-Bin-Sufian/AI-News-Hub/blob/main/LICENSE" target="_blank">
+     <img src="https://img.shields.io/github/license/BrianRuizy/gatsby-minimal-portfolio?color=red&style=flat" />
+   </a>
+</p>
+
+
+## Features
+
+- 📲 PWA ready, installable on Android and iOS
+- 🔎 Algolia Search, search by all attributes
+- 📧 Getform.io contact form with easy setup.
+- 📝 Blog ready, easily add your blog posts with MDX
+- 🌗 Togglable dark mode
+- 💻 SEO ready, option to Add meta description
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,7 +93,40 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-## Deployment using Vercel
+## Getting Started
+
+### Installation
+
+1. Clone the repository
+
+   ```
+   git clone https://github.com/dunky11/react-saas-template
+   ```
+2. Install dependencies, this can take a minute
+
+   ```
+   cd react-saas-template
+   npm install
+   ```
+3. Start the local server
+
+   ```
+   npm start
+   ```
+
+Your browser should now open and show the app. Otherwise open http://localhost:3000/ in your browser. Editing files will automatically refresh the page.
+
+## Deployment
+
+If you are satisfied with the state of your website you can run:
+
+```
+npm run build 
+```
+
+It will create a folder named build with your compiled project inside. After that copy its content into your webroot and you are ready to go.
+
+### Deployment using Vercel
 
 - Login/Signup to the Vercel GitHub account.
 - Authorize the repository access.
@@ -77,6 +134,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Go through the [website](https://vercel.com/docs/deployments/deployment-methods) by Vercel team and learn deploying using Git.
 
-## License
+## Built With
 
-MIT License, see [LICENSE](./LICENSE).
+* [Create-React-App](https://github.com/facebook/create-react-app) - Used to bootstrap the development
+* [Material-UI](https://github.com/mui-org/material-ui) - Material Design components
+* [React-Router](https://github.com/ReactTraining/react-router) - Routing of the app
+  
+## Contribute
+Show your support by ⭐ the project. Pull requests are always welcome. We'd love to have your helping hand on `AI-News-Hub` blog!
+
+## Credits
+This project exists thanks to all the people who [contribute](https://github.com/Ubayed-Bin-Sufian/AI-News-Hub/graphs/contributors).
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
