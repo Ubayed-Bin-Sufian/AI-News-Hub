@@ -95,21 +95,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Getting Started
 
+### Pre-requisites (once for a machine)
+- Node Installation: Install [Node.js](https://nodejs.org/en/download/) [Recommended LTS version]
+
+After successfully installing those dependencies, open this template with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDE [VS Code shortcut <code>ctrl/cmd + \`</code>]
+
 ### Installation
 
 1. Clone the repository
-
    ```
-   git clone https://github.com/dunky11/react-saas-template
+   git clone https://github.com/Ubayed-Bin-Sufian/AI-News-Hub.git
    ```
+   
 2. Install dependencies, this can take a minute
-
    ```
-   cd react-saas-template
    npm install
    ```
+   
 3. Start the local server
-
    ```
    npm start
    ```
@@ -118,30 +121,30 @@ Your browser should now open and show the app. Otherwise open http://localhost:3
 
 ## Deployment
 
-If you are satisfied with the state of your website you can run:
-
+### Production Build
+After finishing all the customization, you can create a production build by running this command.
 ```
 npm run build 
 ```
-
 It will create a folder named build with your compiled project inside. After that copy its content into your webroot and you are ready to go.
 
 ### Deployment using Vercel
-
 - Login/Signup to the Vercel GitHub account.
 - Authorize the repository access.
 - Configure the custom domain on Vercel.
-
 Go through the [website](https://vercel.com/docs/deployments/deployment-methods) by Vercel team and learn deploying using Git.
 
 ## Built With
-
 * [Create-React-App](https://github.com/facebook/create-react-app) - Used to bootstrap the development
 * [Material-UI](https://github.com/mui-org/material-ui) - Material Design components
 * [React-Router](https://github.com/ReactTraining/react-router) - Routing of the app
   
 ## Contribute
 Show your support by ⭐ the project. Pull requests are always welcome. We'd love to have your helping hand on `AI-News-Hub` blog!
+
+## Reporting Issues
+We use GitHub Issues as the official bug tracker for this Template. Please Search [existing issues](https://github.com/Ubayed-Bin-Sufian/AI-News-Hub/issues). It’s possible someone has already reported the same problem.
+If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/Ubayed-Bin-Sufian/AI-News-Hub/issues).
 
 ## Credits
 This project exists thanks to all the people who [contribute](https://github.com/Ubayed-Bin-Sufian/AI-News-Hub/graphs/contributors).
