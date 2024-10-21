@@ -69,6 +69,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+## Deployment using Vercel
+
+- Login/Signup to the Vercel GitHub account.
+- Authorize the repository access.
+- Configure the custom domain on Vercel.
+
+Go through the [website](https://vercel.com/docs/deployments/deployment-methods) by Vercel team and learn deploying using Git.
+
 ## License
 
 MIT License, see [LICENSE](./LICENSE).
