@@ -139,8 +139,14 @@ Go through the [website](https://vercel.com/docs/deployments/deployment-methods)
 * [Material-UI](https://github.com/mui-org/material-ui) - Material Design components
 * [React-Router](https://github.com/ReactTraining/react-router) - Routing of the app
   
-## Contribute
+## Contributing
 Show your support by ⭐ the project. Pull requests are always welcome. We'd love to have your helping hand on `AI-News-Hub` blog!
+
+<!--Please see [CONTRIBUTING.md](/CONTRIBUTING.md) for getting started with the contribution.-->
+
+Make sure that you follow [CODE_OF_CONDUCT](/CODE_OF_CONDUCT.md) while contributing and engaging in the discussions. 
+
+**When contributing, please first discuss the change you wish to make via an issue on this repository before making the actual change**.
 
 ## Reporting Issues
 We use GitHub Issues as the official bug tracker for this Template. Please Search [existing issues](https://github.com/Ubayed-Bin-Sufian/AI-News-Hub/issues). It’s possible someone has already reported the same problem.
