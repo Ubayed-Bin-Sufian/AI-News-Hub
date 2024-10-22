@@ -155,5 +155,9 @@ If your problem or idea has not been addressed yet, feel free to [open a new iss
 ## Credits
 This project exists thanks to all the people who [contribute](https://github.com/Ubayed-Bin-Sufian/AI-News-Hub/graphs/contributors).
 
+<a href="https://github.com/Ubayed-Bin-Sufian/AI-News-Hub/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Ubayed-Bin-Sufian/AI-News-Hub" />
+</a>
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
