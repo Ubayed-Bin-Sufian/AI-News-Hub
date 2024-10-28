@@ -100,19 +100,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 After successfully installing those dependencies, open this template with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDE [VS Code shortcut <code>ctrl/cmd + \`</code>]
 
+### Requirements
+
+To follow along, you will need:
+
+- Python 3.10 or higher. You can download the latest version of Python from the official website: [python.org](https://www.python.org)
+- An OpenAI API key. Sign up for an API key at [openai.com](https://www.openai.com)
+
 ### Installation
 
 1. Clone the repository
    ```
    git clone https://github.com/Ubayed-Bin-Sufian/AI-News-Hub.git
    ```
+
+2. Navigate to the project directory:
+   ```
+   cd AI-News-Hub
+   ```
    
-2. Install dependencies, this can take a minute
+3. Install dependencies, this can take a minute
    ```
    npm install
    ```
    
-3. Start the local server
+4. Start the local server
    ```
    npm start
    ```
