@@ -131,6 +131,25 @@ To follow along, you will need:
 
 Your browser should now open and show the app. Otherwise open http://localhost:3000/ in your browser. Editing files will automatically refresh the page.
 
+#### For Python scripts
+1. Create a virtual environment (optional but recommended):
+   ```
+   python3 -m venv env
+   source env/bin/activate
+   ```
+
+2. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Set up your OpenAI API key:
+   - Create a `.env` file in the project root directory.
+   - Add your OpenAI API key to the `.env` file:
+   ```
+   OPENAI_API_KEY=your_api_key_here
+   ```
+
 ## Deployment
 
 ### Production Build
