@@ -37,6 +37,9 @@ chat_completion = client.chat.completions.create(
     ]
 )
 
+# # To find what model we are using
+# print(chat_completion.model)
+
 # Checking if the completion was successful based on the finish reason
 finish_reason = chat_completion.choices[0].finish_reason
 
