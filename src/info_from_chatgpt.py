@@ -89,4 +89,4 @@ def answer():
 if __name__ == "__main__":
     app.run(debug=True)
 
-# curl -X POST http://localhost:5000/AI_news \-H "Content-Type: application/json" \-d '{ "urls": ["https://news.mit.edu/topic/artificial-intelligence2", "https://techcrunch.com/category/artificial-intelligence/", "https://www.artificialintelligence-news.com/"] }'
+# curl -X POST http://localhost:5000/AI_news -H "Content-Type: application/json" -d "{\"urls\": [\"https://news.mit.edu/topic/artificial-intelligence2\", \"https://techcrunch.com/category/artificial-intelligence/\", \"https://www.artificialintelligence-news.com/\"]}"
